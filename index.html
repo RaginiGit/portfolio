@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <!-- <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'> -->
+
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title> Responsive portfolio website Ansel </title>
+</head>
+
+<body class="">
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Ansel</a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <svg class="nav__icon" id="icon__home" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                <path
+                                    d="M5 22h14a2 2 0 0 0 2-2v-9a1 1 0 0 0-.29-.71l-8-8a1 1 0 0 0-1.41 0l-8 8A1 1 0 0 0 3 11v9a2 2 0 0 0 2 2zm5-2v-5h4v5zm-5-8.59 7-7 7 7V20h-3v-5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v5H5z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <svg class="nav__icon" id="icon__about" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24">
+                                <path
+                                    d="M12 2a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm9 11v-1a7 7 0 0 0-7-7h-4a7 7 0 0 0-7 7v1h2v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <svg class="nav__icon" id="icon__skills" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24">
+                                <path
+                                    d="M6 22h15v-2H6.012C5.55 19.988 5 19.805 5 19s.55-.988 1.012-1H21V4c0-1.103-.897-2-2-2H6c-1.206 0-3 .799-3 3v14c0 2.201 1.794 3 3 3zM5 8V5c0-.805.55-.988 1-1h13v12H5V8z">
+                                </path>
+                                <path d="M8 6h9v2H8z"></path>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <svg class="nav__icon" id="icon__work" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24">
+                                <path
+                                    d="M20 6h-3V4c0-1.103-.897-2-2-2H9c-1.103 0-2 .897-2 2v2H4c-1.103 0-2 .897-2 2v11c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2zm-5-2v2H9V4h6zM4 8h16v4h-3v-2h-2v2H9v-2H7v2H4V8zm0 11v-5h3v2h2v-2h6v2h2v-2h3.001v5H4z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <svg class="nav__icon" id="icon__contact" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24">
+                                <path
+                                    d="M16 2H8C4.691 2 2 4.691 2 8v13a1 1 0 0 0 1 1h13c3.309 0 6-2.691 6-6V8c0-3.309-2.691-6-6-6zm4 14c0 2.206-1.794 4-4 4H4V8c0-2.206 1.794-4 4-4h8c2.206 0 4 1.794 4 4v8z">
+                                </path>
+                                <path d="M7 9h10v2H7zm0 4h7v2H7z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <svg id="theme-button" class="change-theme sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <path d=""></path>
+            </svg>
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <div>
+                    <span class="home__greeting">Hello, I'm</span>
+                    <h1 class="home_name">Ansel Klee</h1>
+                    <h3 class="home__education">Frontend Developer</h3>
+                    </div>
+                    <div class="home__buttons">
+                        <a download="" href="assets/pdf/Ansel-Cv.pdf" class="button__ghost">
+                            Download CV
+                        </a>
+                        <a href="#about" class="button">About Me</a>
+                    </div>
+                </div>
+
+                <div class="home__handle">
+                    <img src="assets/img/perfil.png" alt="" class="home__img">
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/" class="home__social-link">
+                        <svg class="home__social-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                            <path
+                                d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z">
+                            </path>
+                            </svg>
+                    </a>
+                    <a href="https://www.github.com/" class="home__social-link">
+                        <svg class="home__social-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z">
+                            </path>
+                            </svg>
+                    </a>
+                    <a href="https://www.dribble.com/" class="home__social-link">
+                        <svg class="home__social-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                            <path
+                                d="M20.66 6.98a9.932 9.932 0 0 0-3.641-3.64C15.486 2.447 13.813 2 12 2s-3.486.447-5.02 1.34c-1.533.893-2.747 2.107-3.64 3.64S2 10.187 2 12s.446 3.487 1.34 5.02a9.924 9.924 0 0 0 3.641 3.64C8.514 21.553 10.187 22 12 22s3.486-.447 5.02-1.34a9.932 9.932 0 0 0 3.641-3.64C21.554 15.487 22 13.813 22 12s-.446-3.487-1.34-5.02zM12 3.66c2 0 3.772.64 5.32 1.919-.92 1.174-2.286 2.14-4.1 2.9-1.002-1.813-2.088-3.327-3.261-4.54A7.715 7.715 0 0 1 12 3.66zM5.51 6.8a8.116 8.116 0 0 1 2.711-2.22c1.212 1.201 2.325 2.7 3.34 4.5-2 .6-4.114.9-6.341.9-.573 0-1.006-.013-1.3-.04A8.549 8.549 0 0 1 5.51 6.8zM3.66 12c0-.054.003-.12.01-.2.007-.08.01-.146.01-.2.254.014.641.02 1.161.02 2.666 0 5.146-.367 7.439-1.1.187.373.381.793.58 1.26-1.32.293-2.674 1.006-4.061 2.14S6.4 16.247 5.76 17.5c-1.4-1.587-2.1-3.42-2.1-5.5zM12 20.34c-1.894 0-3.594-.587-5.101-1.759.601-1.187 1.524-2.322 2.771-3.401 1.246-1.08 2.483-1.753 3.71-2.02a29.441 29.441 0 0 1 1.56 6.62 8.166 8.166 0 0 1-2.94.56zm7.08-3.96a8.351 8.351 0 0 1-2.58 2.621c-.24-2.08-.7-4.107-1.379-6.081.932-.066 1.765-.1 2.5-.1.799 0 1.686.034 2.659.1a8.098 8.098 0 0 1-1.2 3.46zm-1.24-5c-1.16 0-2.233.047-3.22.14a27.053 27.053 0 0 0-.68-1.62c2.066-.906 3.532-2.006 4.399-3.3 1.2 1.414 1.854 3.027 1.96 4.84-.812-.04-1.632-.06-2.459-.06z">
+                            </path>
+                            </svg>
+                    </a>
+                </div>
+                <a href="#about" class="home__scroll">
+                    <svg class="home__scroll-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                        <path
+                            d="M11.975 22H12c3.859 0 7-3.14 7-7V9c0-3.841-3.127-6.974-6.981-7h-.06C8.119 2.022 5 5.157 5 9v6c0 3.86 3.129 7 6.975 7zM7 9a5.007 5.007 0 0 1 4.985-5C14.75 4.006 17 6.249 17 9v6c0 2.757-2.243 5-5 5h-.025C9.186 20 7 17.804 7 15V9z">
+                        </path>
+                        <path d="M11 6h2v6h-2z"></path>
+                    </svg>
+                    <span class="home__scroll-name">Scroll down</span>
+                </a>
+            </div>
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="about section" id="about">
+            <span class="section__subtitle">My Intro</span>
+            <h2 class="section__title">About Me</h2>
+
+            <div class="about__container container grid">
+                <img src="assets/img/about.jpg" alt="" class="about__img">
+
+                <div class="about__data">
+                    <div class="about__info">
+                        <div class="about__box">
+                            <svg class="about__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                <path
+                                    d="M5 8.999c0 1.902.765 3.627 2 4.89V21a.998.998 0 0 0 1.447.895L12 20.118l3.553 1.776a.992.992 0 0 0 .972-.043c.295-.183.475-.504.475-.851v-7.11a6.976 6.976 0 0 0 2-4.891C19 5.14 15.86 2 12 2S5 5.14 5 8.999zm7.447 9.106a1 1 0 0 0-.895 0L9 19.382v-4.067c.911.434 1.926.685 3 .685s2.089-.25 3-.685v4.066l-2.553-1.276zM12 4c2.756 0 5 2.242 5 4.999A5.006 5.006 0 0 1 12 14c-2.757 0-5-2.243-5-5.001A5.005 5.005 0 0 1 12 4z">
+                                </path>
+                            </svg>
+                            <h3 class="about__title">Experience</h3>
+                            <span class="about__subtitle">30 years Working</span>
+                        </div>
+                        <div class="about__box">
+                            <svg class="about__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                <path
+                                    d="M20 6h-3V4c0-1.103-.897-2-2-2H9c-1.103 0-2 .897-2 2v2H4c-1.103 0-2 .897-2 2v11c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2zm-4 2v11H8V8h8zm-1-4v2H9V4h6zM4 8h2v11H4V8zm14 11V8h2l.001 11H18z">
+                                </path>
+                            </svg>
+                            <h3 class="about__title">Completed</h3>
+                            <span class="about__subtitle">64+ projects</span>
+                        </div>
+                        <div class="about__box">
+                            <svg class="about__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                <path
+                                    d="M12 2C6.486 2 2 6.486 2 12v4.143C2 17.167 2.897 18 4 18h1a1 1 0 0 0 1-1v-5.143a1 1 0 0 0-1-1h-.908C4.648 6.987 7.978 4 12 4s7.352 2.987 7.908 6.857H19a1 1 0 0 0-1 1V18c0 1.103-.897 2-2 2h-2v-1h-4v3h6c2.206 0 4-1.794 4-4 1.103 0 2-.833 2-1.857V12c0-5.514-4.486-10-10-10z">
+                                </path>
+                            </svg>
+                            <h3 class="about__title">Support</h3>
+                            <span class="about__subtitle">Online 24/7</span>
+                        </div>
+
+                    </div>
+
+                    <p class="about__description">
+                        Frontend Developer, I create web pages with UI / UX user interface,
+                        I have years of experience and many clients are happy
+                        with the projects carried out.
+                    </p>
+
+                    <a href="#contact" class="button">Contact Me </a>
+                </div>
+        </section>
+
+        <!--=============== SKILLS ===============-->
+        <section class="skills section" id="skills">
+            <span class="section__subtitle">My abilities</span>
+            <h2 class="section__title">My Experience</h2>
+
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title">Frontend Developer</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                    <path
+                                        d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895-3.667-3.714 1.424-1.404 2.257 2.286 4.327-4.294 1.408 1.42-5.749 5.706z">
+                                    </path>
+                                </svg>
+
+                                <div>
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__level">Basic</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                    <path
+                                        d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895-3.667-3.714 1.424-1.404 2.257 2.286 4.327-4.294 1.408 1.42-5.749 5.706z">
+                                    </path>
+                                </svg>
+
+                                <div>
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                    <path
+                                        d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895-3.667-3.714 1.424-1.404 2.257 2.286 4.327-4.294 1.408 1.42-5.749 5.706z">
+                                    </path>
+                                </svg>
+
+                                <div>
+                                    <h3 class="skills__name">Javascript</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                    <path
+                                        d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895-3.667-3.714 1.424-1.404 2.257 2.286 4.327-4.294 1.408 1.42-5.749 5.706z">
+                                    </path>
+                                </svg>
+
+                                <div>
+                                    <h3 class="skills__name">Bootstrap</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                    <path
+                                        d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895-3.667-3.714 1.424-1.404 2.257 2.286 4.327-4.294 1.408 1.42-5.749 5.706z">
+                                    </path>
+                                </svg>
+
+                                <div>
+                                    <h3 class="skills__name">Git</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                    <path
+                                        d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895-3.667-3.714 1.424-1.404 2.257 2.286 4.327-4.294 1.408 1.42-5.749 5.706z">
+                                    </path>
+                                </svg>
+
+                                <div>
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__title">Backend Developer</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                    <path
+                                        d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895-3.667-3.714 1.424-1.404 2.257 2.286 4.327-4.294 1.408 1.42-5.749 5.706z">
+                                    </path>
+                                </svg>
+
+                                <div>
+                                    <h3 class="skills__name">PHP</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                    <path
+                                        d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895-3.667-3.714 1.424-1.404 2.257 2.286 4.327-4.294 1.408 1.42-5.749 5.706z">
+                                    </path>
+                                </svg>
+
+                                <div>
+                                    <h3 class="skills__name">Node Js</h3>
+                                    <span class="skills__level">Basic</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                    <path
+                                        d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895-3.667-3.714 1.424-1.404 2.257 2.286 4.327-4.294 1.408 1.42-5.749 5.706z">
+                                    </path>
+                                </svg>
+
+                                <div>
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                    <path
+                                        d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895-3.667-3.714 1.424-1.404 2.257 2.286 4.327-4.294 1.408 1.42-5.749 5.706z">
+                                    </path>
+                                </svg>
+
+                                <div>
+                                    <h3 class="skills__name">MySQL</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                    <path
+                                        d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895-3.667-3.714 1.424-1.404 2.257 2.286 4.327-4.294 1.408 1.42-5.749 5.706z">
+                                    </path>
+                                </svg>
+
+                                <div>
+                                    <h3 class="skills__name">Firebases</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                    <path
+                                        d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895-3.667-3.714 1.424-1.404 2.257 2.286 4.327-4.294 1.408 1.42-5.749 5.706z">
+                                    </path>
+                                </svg>
+
+                                <div>
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="skills__description">
+                Frontend Developer, I create web pages with UI / UX user interface,
+                I have yeaand many clients are happy
+                with thedfdf outadfasfasf.
+            </p>
+        </section>
+
+        <!--=============== SERVICES ===============-->
+        <section class="services section" id="services">
+            <span class="section__subtitle">My Services</span>
+            <h2 class="section__title">What I offer</h2>
+
+            <div class="services__container container grid">
+                <div class="services__card">
+                    <h3 class="services__title">Product <br> Designer</h3>
+
+                    <span class="services__button">
+                        See more <svg class="services__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                            <path
+                                d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z">
+                            </path>
+                        </svg>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <svg class="services__modal-close" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24">
+                                <path
+                                    d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+                                </path>
+                            </svg>
+                            <h3 class="services__modal-title">Product Designer</h3>
+                            <p class="services__modal-description">
+                                Service with more than 3 years of expeirence.
+                                Providing quality work to clients and companies.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        I develop the User Interface.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        Web Page Development.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        I create an element Interactions.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        Position your company brand.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        Design and mockups of products for companies.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__card">
+                    <h3 class="services__title">Ui/Ux <br> Designer</h3>
+
+                    <span class="services__button">
+                        See more <svg class="services__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                            <path
+                                d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z">
+                            </path>
+                        </svg>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <svg class="services__modal-close" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24">
+                                <path
+                                    d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+                                </path>
+                            </svg>
+                            <h3 class="services__modal-title">Ui/Ux Designer</h3>
+                            <p class="services__modal-description">
+                                Service with more than 3 years of expeirence.
+                                Providing quality work to clients and companies.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        I develop the User Interface.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        Web Page Development.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        I create an element Interactions.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        Position your company brand.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        Design and mockups of products for companies.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__card">
+                    <h3 class="services__title">Visual <br> Designer</h3>
+
+                    <span class="services__button">
+                        See more <svg class="services__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                            <path
+                                d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z">
+                            </path>
+                        </svg>
+                    </span>
+                    
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <svg class="services__modal-close" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24">
+                                <path
+                                    d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+                                </path>
+                            </svg>
+                            <h3 class="services__modal-title">Visual Designer</h3>
+                            <p class="services__modal-description">
+                                Service with more than 3 years of expeirence.
+                                Providing quality work to clients and companies.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        I develop the User Interface.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        Web Page Development.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        I create an element Interactions.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        Position your company brand.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        Design and mockups of products for companies.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__card">
+                    <h3 class="services__title">Product <br> Designer</h3>
+
+                    <span class="services__button">
+                        See more <svg class="services__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                            <path
+                                d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z">
+                            </path>
+                        </svg>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <svg class="services__modal-close" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24">
+                                <path
+                                    d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+                                </path>
+                            </svg>
+                            <h3 class="services__modal-title">Product Designer</h3>
+                            <p class="services__modal-description">
+                                Service with more than 3 years of expeirence.
+                                Providing quality work to clients and companies.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        I develop the User Interface.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        Web Page Development.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        I create an element Interactions.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        Position your company brand.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        Design and mockups of products for companies.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__card">
+                    <h3 class="services__title">Visual <br> Designer</h3>
+
+                    <span class="services__button">
+                        See more <svg class="services__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                            <path
+                                d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z">
+                            </path>
+                        </svg>
+                    </span>
+                    
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <svg class="services__modal-close" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24">
+                                <path
+                                    d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+                                </path>
+                            </svg>
+                            <h3 class="services__modal-title">Visual Designer</h3>
+                            <p class="services__modal-description">
+                                Service with more than 3 years of expeirence.
+                                Providing quality work to clients and companies.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        I develop the User Interface.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        Web Page Development.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        I create an element Interactions.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        Position your company brand.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        Design and mockups of products for companies.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__card">
+                    <h3 class="services__title">Product <br> Designer</h3>
+
+                    <span class="services__button">
+                        See more <svg class="services__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                            <path
+                                d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z">
+                            </path>
+                        </svg>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <svg class="services__modal-close" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24">
+                                <path
+                                    d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+                                </path>
+                            </svg>
+                            <h3 class="services__modal-title">Product Designer</h3>
+                            <p class="services__modal-description">
+                                Service with more than 3 years of expeirence.
+                                Providing quality work to clients and companies.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        I develop the User Interface.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        Web Page Development.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        I create an element Interactions.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        Position your company brand.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        Design and mockups of products for companies.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__card">
+                    <h3 class="services__title">Ui/Ux <br> Designer</h3>
+
+                    <span class="services__button">
+                        See more <svg class="services__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                            <path
+                                d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z">
+                            </path>
+                        </svg>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <svg class="services__modal-close" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24">
+                                <path
+                                    d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+                                </path>
+                            </svg>
+                            <h3 class="services__modal-title">Ui/Ux Designer</h3>
+                            <p class="services__modal-description">
+                                Service with more than 3 years of expeirence.
+                                Providing quality work to clients and companies.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        I develop the User Interface.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        Web Page Development.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        I create an element Interactions.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        Position your company brand.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24">
+                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
+                                        </path>
+                                    </svg>
+                                    <p class="services__modal-info">
+                                        Design and mockups of products for companies.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== WORK ===============-->
+        <section class="work section" id="work">
+            <span class="section__subtitle">My Portfolio</span>
+            <h3 class="section__title">Recent Works</h3>
+
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter="all">All</span>
+                <span class="work__item" data-filter=".web">Web</span>
+                <span class="work__item" data-filter=".movil">Movil</span>
+                <span class="work__item" data-filter=".design">Design</span>
+            </div>
+
+            <div class="work__container container grid">
+                <div class="work__card mix web">
+                    <img src="assets/img/work1.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Web Design</h3>
+
+                    <a href="" class="work__button">
+                        Demo <svg class="work__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>
+                    </a>
+                </div> 
+
+                <div class="work__card mix movil">
+                    <img src="assets/img/work2.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">App movil</h3>
+
+                    <a href="" class="work__button">
+                        Demo <svg class="work__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>
+                    </a>
+                </div>
+
+                <div class="work__card mix design">
+                    <img src="assets/img/work3.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Brand Design</h3>
+
+                    <a href="" class="work__button">
+                        Demo <svg class="work__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>
+                    </a>
+                </div>
+
+                <div class="work__card mix web">
+                    <img src="assets/img/work4.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Web Design</h3>
+
+                    <a href="" class="work__button">
+                        Demo <svg class="work__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>
+                    </a>
+                </div> 
+
+                <div class="work__card mix movil">
+                    <img src="assets/img/work5.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">App movil</h3>
+
+                    <a href="" class="work__button">
+                        Demo <svg class="work__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>
+                    </a>
+                </div>           
+            </div>
+        </section>
+
+        <!--=============== TESTIMONIALS ===============-->
+        <section class="testimonial section">
+            <span class="section__subtitle">My clients say</span>
+            <h3 class="section__title">Testimonial</h3>
+
+            <div class="testimonial__container container swiper">
+                <div class="swiper-wrapper">
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial1.png" alt="" class="testimonial__img">
+                        
+                        <h3 class="testimonial__name">John Doe</h3>
+                        <p class="testimonial__description">
+                            A really good job, all aspects of the project were
+                            followed step by step and with good results.
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial2.png" alt="" class="testimonial__img">
+                        
+                        <h3 class="testimonial__name">Paula Vusy</h3>
+                        <p class="testimonial__description">
+                            A really good job, all aspects of the project were
+                            followed step by step and with good results.
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial3.png" alt="" class="testimonial__img">
+                        
+                        <h3 class="testimonial__name">Sarah Chill</h3>
+                        <p class="testimonial__description">
+                            A really good job, all aspects of the project were
+                            followed step by step and with good results.
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial1.png" alt="" class="testimonial__img">
+                        
+                        <h3 class="testimonial__name">John Doe</h3>
+                        <p class="testimonial__description">
+                            A really good job, all aspects of the project were
+                            followed step by step and with good results.
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial2.png" alt="" class="testimonial__img">
+                        
+                        <h3 class="testimonial__name">Paula Vusy</h3>
+                        <p class="testimonial__description">
+                            A really good job, all aspects of the project were
+                            followed step by step and with good results.
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial3.png" alt="" class="testimonial__img">
+                        
+                        <h3 class="testimonial__name">Sarah Chill</h3>
+                        <p class="testimonial__description">
+                            A really good job, all aspects of the project were
+                            followed step by step and with good results.
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial1.png" alt="" class="testimonial__img">
+                        
+                        <h3 class="testimonial__name">John Doe</h3>
+                        <p class="testimonial__description">
+                            A really good job, all aspects of the project were
+                            followed step by step and with good results.
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial2.png" alt="" class="testimonial__img">
+                        
+                        <h3 class="testimonial__name">Paula Vusy</h3>
+                        <p class="testimonial__description">
+                            A really good job, all aspects of the project were
+                            followed step by step and with good results.
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial3.png" alt="" class="testimonial__img">
+                        
+                        <h3 class="testimonial__name">Sarah Chill</h3>
+                        <p class="testimonial__description">
+                            A really good job, all aspects of the project were
+                            followed step by step and with good results.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!--=============== CONTACT ===============-->
+        <section class="contact section" id="contact">
+            <span class="section__subtitle">Get in touch</span>
+            <h3 class="section__title">Contact Me</h3>
+
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title">Talk to me</h3>
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <svg class="contact__card-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M20 4H6c-1.103 0-2 .897-2 2v5h2V8l6.4 4.8a1.001 1.001 0 0 0 1.2 0L20 8v9h-8v2h8c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-7 6.75L6.666 6h12.668L13 10.75z"></path><path d="M2 12h7v2H2zm2 3h6v2H4zm3 3h4v2H7z"></path></svg>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">AnselWork@gmail.com</span>
+
+                            <a href="" target="_blank" class="contact__button">
+                                Write Me <svg class="contact__button-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>
+                            </a>
+                        </div>
+                        <div class="contact__card">
+                            <svg class="contact__card-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112s-.58.729-.711.879-.262.168-.486.056-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374s.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666-.181-.435-.366-.377-.504-.383a9.65 9.65 0 0 0-.429-.008.826.826 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321c.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.537.171 1.026.146 1.413.089.431-.064 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.067-.056-.094-.207-.151-.43-.263"></path></svg>                            <h3 class="contact__card-title">Whatsapp</h3>
+                            <span class="contact__card-data">999-888-666</span>
+
+                            <a href="" target="_blank" class="contact__button">
+                                Write Me <svg class="contact__button-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>
+                            </a>
+                        </div>
+                        <div class="contact__card">
+                            <svg class="contact__card-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M12 3c-4.92 0-8.91 3.729-8.91 8.332 0 2.616 1.291 4.952 3.311 6.479V21l3.041-1.687c.811.228 1.668.35 2.559.35 4.92 0 8.91-3.73 8.91-8.331C20.91 6.729 16.92 3 12 3zm.938 11.172-2.305-2.394-4.438 2.454 4.865-5.163 2.305 2.395 4.439-2.455-4.866 5.163z"></path></svg>                            
+                            <h3 class="contact__card-title">Messenger</h3>
+                            <span class="contact__card-data">Ansel.fb213</span>
+
+                            <a href="" target="_blank" class="contact__button">
+                                Write Me <svg class="contact__button-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__content">
+                    <h3 class="contact__title">Write me your project</h3>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Name</label>
+                            <input type="text" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Mail</label>
+                            <input type="email" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div contact__form-area">
+                            <label for="" class="contact__form-tag">Project</label>
+                            <textarea cols="30" rows="10" class="contact__form-input"></textarea>
+                        </div>
+
+                        <button class="button__super">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Ansel</h1>
+
+            <ul class="footer__list">
+                <li>
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+                <li>
+                    <a href="#services" class="footer__link">Services</a>
+                </li>
+                <li>
+                    <a href="#work" class="footer__link">Projects</a>
+                </li>
+                
+            </ul>
+
+            <ul class="footer__social">
+                <a href="" class="footer__social-link">
+                    <svg class="footer__social-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path></svg>
+                </a>
+                <a href="" class="footer__social-link">
+                    <svg class="footer__social-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path></svg>
+                </a>
+                <a href="" class="footer__social-link">
+                    <svg class="footer__social-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path></svg>
+                </a>
+            </ul>
+
+            <p class="footer__copy">
+                ConteNik <span>&copy;</span> All rights reserved
+            </p>
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
