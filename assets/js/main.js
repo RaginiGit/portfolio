@@ -7,8 +7,8 @@ const sr = ScrollReveal({
 })
 
 sr.reveal('.home__data');
-sr.reveal('.home__handle');
-sr.reveal('.home__social, .home__scroll', {origin: 'bottom'});
+sr.reveal('.home__handle', {delay: 100});
+sr.reveal('.home__social, .home__scroll', {delay: 150, origin: 'bottom'});
 
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
