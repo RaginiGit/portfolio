@@ -31,12 +31,12 @@
         Teal: hsl(174, 63%, 62%)
   */
 
-  --first-hue: 174;
-  --sat:63%;
-  --lig: 62%; 
+  --first-hue: 250;
+  --sat:66%;
+  --lig: 75%; 
   --second-hue: 219;
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--first-hue), var(--sat), 58%); /* - 4% */
+  --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* - 4% */
   --title-color: hsl(var(--second-hue), 15%, 95%);
   --text-color: hsl(var(--second-hue), 8%, var(--lig));
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
@@ -91,6 +91,12 @@ html {
   scroll-behavior: smooth;
 }
 
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
+
+
 body,
 button,
 input,
@@ -132,9 +138,7 @@ img {
 /*=============== THEME ===============*/
 .change-theme{
   fill: var(--theme-color);
-  transform: scale(0.8);
   transition: .3s !important;
-
 }
 
 #theme-button.moon path{
@@ -1159,6 +1163,15 @@ body::-webkit-scrollbar-thumb:hover{
     /* width: 295px; */
   }
   
+  .home__handle{
+    width: 220px;
+    height: 340px;
+  }
+
+  .home__img{
+    width: 180px;
+  }
+
   .contact__info{
     grid-template-columns: 420px;
     justify-content: center;
@@ -1166,6 +1179,10 @@ body::-webkit-scrollbar-thumb:hover{
   .skills__description{
     padding: 1.7rem 3.1rem;
     text-align: center;
+  }
+
+  .home{
+    margin-top: 1.5rem;
   }
 }
 
@@ -1195,8 +1212,6 @@ body::-webkit-scrollbar-thumb:hover{
   }
 
   .home__data{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     margin-top: -2.8rem;
   }
 
@@ -1206,15 +1221,15 @@ body::-webkit-scrollbar-thumb:hover{
 
   .home__handle{
     width: 240px;
-    height: 360px;
+    height: 380px;
   }
 
   .home__img{
-    width: 180px;
+    width: 200px;
   }
 
   .home, .skills{
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
   }
 
   .about__img{
@@ -1335,11 +1350,11 @@ body::-webkit-scrollbar-thumb:hover{
   .home__handle{
     margin-top: -3.5rem;
     width: 250px;
-    height: 370px;
+    height: 390px;
   }
   
   .home__img{
-    width: 190px;
+    width: 200px;
   }
 
   .about__info{
