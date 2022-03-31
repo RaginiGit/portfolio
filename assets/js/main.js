@@ -1,3 +1,16 @@
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '100px',
+    duration: 2000,
+    delay: 00,
+    reset: true
+})
+
+sr.reveal('.home__data');
+sr.reveal('.home__handle');
+sr.reveal('.home__social, .home__scroll', {origin: 'bottom'});
+
+
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 function scrollHeader(){
     const header = document.getElementById('header');
@@ -122,14 +135,3 @@ themeButton.addEventListener('click', () => {
 })
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '100px',
-    duration: 2500,
-    delay: 400,
-    // reset: true
-})
-
-sr.reveal('.home__data');
-sr.reveal('.home__handle', {delay: 700});
-sr.reveal('.home__social, .home__scroll', {delay: 900, origin: 'bottom'});
