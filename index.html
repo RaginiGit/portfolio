@@ -17,7 +17,8 @@
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css">
-
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
     <title> Responsive portfolio website Ansel </title>
 </head>
 
@@ -96,7 +97,7 @@
     <main class="main">
         <section class="home section" id="home">
             <div class="home__container container grid">
-                <div class="home__data">
+                <div class="home__data load-hidden">
                     <div>
                     <span class="home__greeting">Hello, I'm</span>
                     <h1 class="home_name">Ansel Klee</h1>
@@ -110,11 +111,11 @@
                     </div>
                 </div>
 
-                <div class="home__handle">
+                <div class="home__handle load-hidden">
                     <img src="assets/img/perfil.png" alt="" class="home__img">
                 </div>
 
-                <div class="home__social">
+                <div class="home__social load-hidden">
                     <a href="https://www.linkedin.com/" class="home__social-link">
                         <svg class="home__social-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                             <path
@@ -137,7 +138,7 @@
                             </svg>
                     </a>
                 </div>
-                <a href="#about" class="home__scroll">
+                <a href="#about" class="home__scroll load-hidden">
                     <svg class="home__scroll-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                         <path
                             d="M11.975 22H12c3.859 0 7-3.14 7-7V9c0-3.841-3.127-6.974-6.981-7h-.06C8.119 2.022 5 5.157 5 9v6c0 3.86 3.129 7 6.975 7zM7 9a5.007 5.007 0 0 1 4.985-5C14.75 4.006 17 6.249 17 9v6c0 2.757-2.243 5-5 5h-.025C9.186 20 7 17.804 7 15V9z">
@@ -799,172 +800,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="services__card">
-                    <h3 class="services__title">Product <br> Designer</h3>
-
-                    <span class="services__button">
-                        See more <svg class="services__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                            <path
-                                d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z">
-                            </path>
-                        </svg>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <svg class="services__modal-close" xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24">
-                                <path
-                                    d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
-                                </path>
-                            </svg>
-                            <h3 class="services__modal-title">Product Designer</h3>
-                            <p class="services__modal-description">
-                                Service with more than 3 years of expeirence.
-                                Providing quality work to clients and companies.
-                            </p>
-
-                            <ul class="services__modal-list">
-                                <li class="services__modal-item">
-                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24">
-                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
-                                        </path>
-                                    </svg>
-                                    <p class="services__modal-info">
-                                        I develop the User Interface.
-                                    </p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24">
-                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
-                                        </path>
-                                    </svg>
-                                    <p class="services__modal-info">
-                                        Web Page Development.
-                                    </p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24">
-                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
-                                        </path>
-                                    </svg>
-                                    <p class="services__modal-info">
-                                        I create an element Interactions.
-                                    </p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24">
-                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
-                                        </path>
-                                    </svg>
-                                    <p class="services__modal-info">
-                                        Position your company brand.
-                                    </p>
-                                </li>
-                                <li class="services__modal-item">
-                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24">
-                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
-                                        </path>
-                                    </svg>
-                                    <p class="services__modal-info">
-                                        Design and mockups of products for companies.
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="services__card">
-                    <h3 class="services__title">Ui/Ux <br> Designer</h3>
-
-                    <span class="services__button">
-                        See more <svg class="services__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                            <path
-                                d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z">
-                            </path>
-                        </svg>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <svg class="services__modal-close" xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24">
-                                <path
-                                    d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
-                                </path>
-                            </svg>
-                            <h3 class="services__modal-title">Ui/Ux Designer</h3>
-                            <p class="services__modal-description">
-                                Service with more than 3 years of expeirence.
-                                Providing quality work to clients and companies.
-                            </p>
-
-                            <ul class="services__modal-list">
-                                <li class="services__modal-item">
-                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24">
-                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
-                                        </path>
-                                    </svg>
-                                    <p class="services__modal-info">
-                                        I develop the User Interface.
-                                    </p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24">
-                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
-                                        </path>
-                                    </svg>
-                                    <p class="services__modal-info">
-                                        Web Page Development.
-                                    </p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24">
-                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
-                                        </path>
-                                    </svg>
-                                    <p class="services__modal-info">
-                                        I create an element Interactions.
-                                    </p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24">
-                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
-                                        </path>
-                                    </svg>
-                                    <p class="services__modal-info">
-                                        Position your company brand.
-                                    </p>
-                                </li>
-                                <li class="services__modal-item">
-                                    <svg class="services__modal-icon" xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24">
-                                        <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z">
-                                        </path>
-                                    </svg>
-                                    <p class="services__modal-info">
-                                        Design and mockups of products for companies.
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 
@@ -1233,8 +1068,7 @@
         </div>
     </footer>
 
-    <!--=============== SCROLLREVEAL ===============-->
-    <script src="assets/js/scrollreveal.min.js"></script>
+
 
     <!--=============== SWIPER JS ===============-->
     <script src="assets/js/swiper-bundle.min.js"></script>
