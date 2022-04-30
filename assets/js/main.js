@@ -1,5 +1,13 @@
-/*=============== SCROLL REVEAL ANIMATION ===============*/
+let details = navigator.userAgent;
+let regexp = /android|iphone|kindle|ipad/i;
+let isMobileDevice = regexp.test(details);
+if (!isMobileDevice) {
+  document.write("<h3 style='text-align: center; background: hsl(207, 48%, 8%); line-height: 100vh;overflow: hidden;font-family: verdana;color: hsl(207, 90%, 72%)'>Use Mobile to view it</h3>");
+  document.body.style.margin = '0';
+  document.body.style.padding = '0';
+  document.body.style.overflow = 'hidden';
 
+}
 const sr = ScrollReveal({
   origin: 'top',
   distance: '60px',
@@ -9,21 +17,6 @@ const sr = ScrollReveal({
 })
 
 sr.reveal('.home__data');
-// sr.reveal('.theme-btnCont');
-
-
-
-// function xyz(){
-// let wWidth = window.innerWidth;
-// let bWidth = document.body.clientWidth;
-// let Width = (wWidth - bWidth) / 2;
-// let themeBtn = document.querySelector(".theme-btnCont");
-// themeBtn.style.right = (Width + 8) + "px";
-// console.log(bWidth);
-// }
-// window.onload = xyz();
-// window.addEventListener("resize", xyz);
-
 
 
 
@@ -55,16 +48,6 @@ setInterval(() => {
   }
 }, 3000)
 
-
-/*=============== CHANGE BACKGROUND HEADER ===============*/
-// function scrollHeader(){
-//     const header = document.getElementById('header');
-//     // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
-//     if(this.scrollY >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
-// }
-// window.addEventListener('scroll', scrollHeader);
-
-/*=============== SERVICES MODAL ===============*/
 const modalViews = document.querySelectorAll('.services__modal'),
   modalBtns = document.querySelectorAll('.services__button'),
   modalClose = document.querySelectorAll('.services__modal-close');
@@ -81,7 +64,6 @@ modalBtns.forEach((mb, i) => {
     const activeModal = document.querySelector('.active-modal .services__modal-content');
     document.body.style.overflow = 'hidden';
     activeModalParent.addEventListener('click', function (event) {
-      // event.stopPropagation();
       activeModalParent.classList.remove('active-modal');
       document.body.style.overflow = 'auto';
 
@@ -106,7 +88,6 @@ modalClose.forEach((mc) => {
   })
 })
 
-/*=============== MIXITUP FILTER PORTFOLIO ===============*/
 let mixerPortfolio = mixitup('.work__container', {
   selectors: {
     target: '.work__card'
@@ -116,7 +97,6 @@ let mixerPortfolio = mixitup('.work__container', {
   }
 });
 
-/* Link active work */
 const linkWork = document.querySelectorAll('.work__item')
 
 function activeWork() {
@@ -126,7 +106,6 @@ function activeWork() {
 
 linkWork.forEach(l => l.addEventListener('click', activeWork))
 
-/*=============== SWIPER TESTIMONIAL ===============*/
 let swiper = new Swiper(".testimonial__container", {
   spaceBetween: 24,
   loop: true,
@@ -173,8 +152,6 @@ function scrollActive() {
 
 window.addEventListener('scroll', scrollActive)
 
-
-/*=============== SWIPER SLIDE ===============*/
 let swiperEffect = new Swiper(".home .mySwiper", {
   effect: "coverflow",
   grabCursor: true,
@@ -187,10 +164,6 @@ let swiperEffect = new Swiper(".home .mySwiper", {
     modifier: 1,
     slideShadows: false,
   },
-  // autoplay: {
-  //   delay: 3500,
-  //   disableOnInteraction: false,
-  // },
   pagination: {
     el: ".home .swiper-pagination",
   },
@@ -202,8 +175,6 @@ let swiperEffect = new Swiper(".home .mySwiper", {
   },
 });
 
-
-//submit button validation
 let numVerified = false;
 let textVerified = false;
 
@@ -228,7 +199,6 @@ function phonenumber(inputtxt) {
     alert("Invalid Name");
   }
 }
-//submit button animation
 
 window.onload = function () {
   btn.addEventListener('click', function () {
@@ -241,19 +211,6 @@ window.onload = function () {
     }
 
   })
-
-  let details = navigator.userAgent;
-  let regexp = /android|iphone|kindle|ipad/i;
-  let isMobileDevice = regexp.test(details);
-  if (!isMobileDevice) {
-    document.write("<h3 style='text-align: center; background: hsl(207, 48%, 8%); line-height: 100vh;overflow: hidden;font-family: verdana;color: hsl(207, 90%, 72%)'>Use Mobile to view it</h3>");
-    document.body.style.margin = '0';
-    document.body.style.padding = '0';
-    document.body.style.overflow = 'hidden';
-
-  }
-
-
 
   function validate() {
     setTimeout(() => {
