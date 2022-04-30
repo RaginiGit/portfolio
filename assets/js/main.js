@@ -2,11 +2,10 @@ let details = navigator.userAgent;
 let regexp = /android|iphone|kindle|ipad/i;
 let isMobileDevice = regexp.test(details);
 if (!isMobileDevice) {
-  document.write("<h3 style='text-align: center; background: hsl(207, 48%, 8%); line-height: 100vh;overflow: hidden;font-family: verdana;color: hsl(207, 90%, 72%)'>Use Mobile to view it</h3>");
+  document.write("<h3 style='text-align: center; user-select: none;background: hsl(207, 48%, 8%); line-height: 100vh;overflow: hidden;font-family: verdana;color: hsl(207, 90%, 72%)'>Use Mobile to view it</h3>");
   document.body.style.margin = '0';
   document.body.style.padding = '0';
   document.body.style.overflow = 'hidden';
-  document.body.style.userSelect = 'none';
   
 
 }
