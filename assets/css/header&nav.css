@@ -1,0 +1,114 @@
+.header {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 500px;
+  margin: 0 auto;
+  height: 85px;
+  padding: 0 1rem;
+  z-index: 9999;
+}
+
+.header::before {
+  content: '';
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 500px;
+  background: linear-gradient(360deg,
+      hsla(var(--second-hue), 48%, 8%, 1),
+      hsla(var(--first-hue), var(--sat), var(--lig), 0));
+  margin: 0 auto;
+  height: 120px;
+  z-index: -1000;
+}
+
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.nav__logo {
+  color: var(--first-color);
+  font-weight: var(--font-medium);
+  transition: .4s;
+}
+
+.nav__logo:hover {
+  color: var(--first-color-alt);
+}
+
+.nav__menu {
+  position: relative;
+  margin: 0 auto;
+  bottom: 0;
+  background-color: hsla(var(--second-hue), 32%, 16%, .8);
+  min-width: 80%;
+  border-radius: var(--br);
+  padding: 1rem;
+  backdrop-filter: blur(10px);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__link {
+  padding: .4rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 50%;
+}
+
+.nav__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__icon {
+  fill: var(--theme-color);
+  transition: 500ms;
+  transform: scale(.8);
+
+}
+
+.animate__zoomOut .nav__icon {
+  transform: scale(2);
+
+}
+
+.active-link {
+  background: linear-gradient(180deg,
+      hsla(var(--first-hue), var(--sat), var(--lig), 1),
+      hsla(var(--first-hue), var(--sat), var(--lig), .2));
+  box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), 1);
+
+}
+
+.popup {
+  background-color: var(--theme-color-oposite);
+  color: var(--theme-color);
+  padding: 3px 7px;
+  position: absolute;
+  border-radius: 30px;
+  font-size: var(--tiny-font-size);
+  text-align: center;
+  display: none;
+}
+
+.nav__icon:hover .popup {
+  visibility: visible;
+}
+
+.scroll-header {
+  box-shadow: 0 4px 4px hsla(0, 0%, 4%, .3);
+}
